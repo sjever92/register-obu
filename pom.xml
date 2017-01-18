@@ -48,7 +48,12 @@
 		<dependency>
 			<groupId>net.sourceforge.nekohtml</groupId>
 			<artifactId>nekohtml</artifactId>
-			<version>1.9.21</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.cxf</groupId>
+		    <artifactId>cxf-codegen-plugin</artifactId>
+		    <version>3.1.9</version>
 		</dependency>
 	</dependencies>
 
@@ -57,7 +62,7 @@
 			<plugin>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-codegen-plugin</artifactId>
-				<version>2.3.1</version>
+				<version>3.1.9</version>
 				<executions>
 					<execution>
 						<id>test</id>
@@ -71,11 +76,8 @@
 					<wsdlOptions>
 						<wsdlOption>
 							<wsdl>
-								http://timotej-pc:8080/?WSDL
-							</wsdl><!--
-							<wsdl>
 								http://164.8.251.96:18080/RegisterOBUNapravWAR-1.0.0-SNAPSHOT/RegisterOBUService?wsdl
-							</wsdl>-->
+							</wsdl>
 						</wsdlOption>
 					</wsdlOptions>
 				</configuration>

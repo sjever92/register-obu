@@ -40,7 +40,7 @@ public class OBUServiceImpl implements OBUService {
         vozilo.setVrsta(vrsta);
         vozilo.setIdVozila(generateRandomID(proizvajalec, model));
 
-        registerOBUService.dodajVozilo(vozilo, null);
+        registerOBUService.dodajVozilo(vozilo, null, null, null);
     }
 
     @Override
