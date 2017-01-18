@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0" th:fragment="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" th:text="#{app.title}">SB Admin v2.0</a>
+    </div>
+    <!-- /.navbar-header -->
+
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-messages">
+                <li>
+                    <a href="#">
+                        <div>
+                            <strong>BMW 320d</strong>
+                            <span class="pull-right text-muted">
+                                        <em>13:41</em>
+                                    </span>
+                        </div>
+                        <div>V sistem je bilo dodano novo vozilo BMW 320d...</div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <strong>Audi A4</strong>
+                            <span class="pull-right text-muted">
+                                        <em>11:56</em>
+                                    </span>
+                        </div>
+                        <div>V sistem je bilo dodano novo vozilo Audi A4...</div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <strong>Volkswagen Golf GTI</strong>
+                            <span class="pull-right text-muted">
+                                        <em>08:46</em>
+                                    </span>
+                        </div>
+                        <div>V sistem je bilo dodano novo vozilo Volkswagen Golf GTI...</div>
+                    </a>
+                </li>
+            </ul>
+            <!-- /.dropdown-messages -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                </li>
+                <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                </li>
+            </ul>
+            <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+    </ul>
+    <!-- /.navbar-top-links -->
+
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="/"><i class="fa fa-home fa-fw"></i> Domov</a>
+                </li>
+                <li>
+                    <a href="/add-car"><i class="fa fa-table fa-fw"></i> Dodaj vozilo</a>
+                </li>
+                <li>
+                    <a href="/add-person"><i class="fa fa-edit fa-fw"></i> Dodaj osebo</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+</nav>
+
+
+
+</body>
+</html>
